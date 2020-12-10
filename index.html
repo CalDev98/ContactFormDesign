@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Challenge 2</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Challenge 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="container">
-	<div class="container-inner">
-		<div class="circle-container">
-			<div class="circle orange"></div>
-			<div class="circle red"></div>
-			<div class="circle purple"></div>
-			<div class="aqua"></div>
-		</div>
-		<div class="form-container">
-			<div class="form-container-inner">
-				<div class="txt1-container">
-					<h1>Login</h1>
-				</div>
+<body>
+	<div class="container">
+		<header>
+			<nav class="navbar">
+				<ul class="nav-links">
+					<li><a href="#">Acceuil</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">A propos</a></li>
+					<li><a class="contact-link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="second-container">
+			<div class="form-container">
+				<h1 class="welcome-txt">Envoyez-nous vos requetes !</h1>
+				<p>Faites-nous savoir un peu plus sur vous !</p>
+
 				<form>
-					<div class="form-inputs">
-						<label>Email</label>
-						<input type="email" name="">
-
-						<label>Password</label>
-						<input type="password" name="">
-
-						<span class="txt2">Forgot your password</span>
+					<div class="form-inner">
+						<input type="text" name="fname" class="fname" placeholder="Nom">
+						<input type="text" name="lname" class="lname" placeholder="Prenom">
+						<input type="email" name="email" class="email" placeholder="Email">
+						<input type="phone" name="phone" class="phone" placeholder="Phone">
+						<textarea placeholder="Message" class="message"></textarea>
 					</div>
-
-					<div class="btn-container">
-						<button class="register-btn">Register</button>
-						<button class="login-btn">Login</button>
+					<div class="send-btn">
+						<button type="submit" class="mybtn">Envoyer</button>
 					</div>
-				</form>		
-			</div>	
-		</div>
+				</form>
+			</div>
+
+			<div class="text-container">
+				<h1 class="contact-info">Contact Information</h1>
+				<p class="address">9 Rue Ferrand de Beaudiere, Peguy-Ville</p>
+				<p class="phone-number">Appelez-nous: +509 47 09 12 95</p>
+				<p class="plus-info">Nous sommes ouverts du Lundi au Vendredi <br/>
+					<span class="hour">08:00 am - 05:00 pm</span></p>
+
+				<h1 class="follow">Suivez-Nous</h1>
+				<p><span class="fb">facebook</span>
+				<span class="ig">instagram</span>
+			<span class="vim">vimeo</span></p>
+			</div>
+		</section>
 	</div>
+
 </body>
 </html>
